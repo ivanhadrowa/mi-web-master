@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>moah.</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="loader">
+      <div class='spinner'></div>
+  </div>
+
+  
+    <header>
+      <a href="../index.html"
+        ><img class="logo" src="./img/Design Moah CD/moah rosa png.png" alt=""
+      /></a>
+      <button  id="checkout" class="button-checkout"  onclick="showOrder()">Carrito</button>
+
+    </header>
+
+    <div class="bars__menu">
+        <span class="line1__bars-menu"></span>
+        <span class="line2__bars-menu"></span>
+        <span class="line3__bars-menu"></span>
+      </div>
+
+
+        <nav class="menu__desplegable">
+            <a href="../index.html">Inicio</a>
+            <a href="../index.html#nosotros">Nosotros</a>
+            <a href="./servicios.html">Servicios</a>
+            <a class="enlace-activo" href="#">Tienda</a>
+            <a href="./index.html#form">Contacto</a>
+        </nav>
+
+        <h2 data-aos="zoom-out-up">ADQUIRI NUESTROS SERVICIOS!</h2>
+
+    <div  id="page-content" class="page-content">
+
+    <div id="product-cards" class="product-cards">
+
+    </div>  
+
+      <div id="order" class="order">
+        <h1>Su Pedido</h1>
+       
+        <table id="order-table" class="order-table">
+          <tr>
+            <th>Cantidad</th>
+            <th>Detalle</th>
+            <th>Subtotal</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Sitio Web</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Landing Page</td>
+            <td>100</td>
+          </tr>
+        </table>
+        <h2 id="order-total">Total: $150</h2>
+        <div id="order-actions" class="order-actions">
+          
+          <p class="volver" onclick="displayProducts()"><< Volver</p>
+          <p class="confirmar" onclick="pay()">Pagar >></p>
+          
+          
+        </div>
+      </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+      <script>
+        AOS.init({
+        
+       
+        duration: 1100,
+        easing: 'ease'
+    });
+      </script>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function(){
+    document.querySelector(".loader").style.display="none"
+  });
+      </script>
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>

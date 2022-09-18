@@ -1,0 +1,192 @@
+header{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.product-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h1{
+    text-align: center;
+}
+
+.button-checkout{
+    transition-duration: 0.4s;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(48, 48, 48);
+    border: 2px solid #9cc5d5 ;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-right: 70px;
+    height: 45px;
+}
+.button-checkout:hover{
+    background-color: #a6c2ce ;
+    color: white;
+}
+
+.button-add {
+    transition-duration: 0.4s;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 2px solid #cdaac1;
+    border-radius: 8px;
+    padding: 10px 15px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+  
+  .button-add:hover {
+    background-color: #ccb4c4; /* Green */
+    color: white;
+  }
+
+  .button-add.disabled {
+    transition-duration: 0.4s;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    background-color: white;
+    color: rgb(184, 181, 181);
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 15px;
+    position: absolute;
+    right: 15px;
+    bottom: 8px;
+  }
+  
+  .button-add.disabled:hover {
+    background-color: #ffffff; /* Green */
+
+  }
+
+.product-container{
+    margin: 30px;
+    padding: 2px 16px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  position: relative;
+  background-color: rgb(252, 252, 252);
+  max-width: 100%;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+.product-container:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.product-container img{
+    width: 300px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    height: 224px;
+}
+
+.product-container h1{
+    color: rgb(58, 57, 57);
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 25px;
+    text-align: left;
+    padding-bottom: 3px;
+}
+
+.order{
+    min-width: 75%;
+    display: none;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.order-table{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.order-actions{
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+}
+
+.order-actions p{
+    padding: 0 20px;
+}
+
+.order-actions p:hover{
+    cursor: pointer;
+}
+
+h2#order-total{
+    text-align: center;
+    align-items: center;
+}
+
+#product.cards.product-cards{
+    margin-top: 25px;
+}
+
+h2{
+    color: #64a5b1;
+    text-align: center;
+    font-size: 30px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+h3{
+    color: rgb(58, 57, 57);
+}
+
+
+
+@media (min-width:701px){
+    h2{
+        color: #64a5b1;
+        text-align: center;
+        font-size: 40px;
+        
+    }
+}
+
+.confirmar{
+    padding: 2rem 1rem;
+    background-color: rgb(157, 201, 157);
+    border-radius: 10px;
+    margin-left: 5px;
+    height: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 108px;
+}
+
+.volver{
+    padding: 2rem 0.5rem;
+    background-color: rgb(209, 167, 162);
+    border-radius: 10px;
+    margin-right: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
